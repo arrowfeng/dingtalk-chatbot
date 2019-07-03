@@ -12,6 +12,6 @@ COMMAND: 执行的命令 如：（cat /proc/cpuinfo）
 AT: @钉钉群组里的某个人（填写电话号码，使用逗号分隔） 
 
 ## 示例
-docker run -v /root/dingtalk:/root/log --rm -d --env WEBHOOK=https://oapi.dingtalk.com/robot/send?access_token=xxx --env APPNAME=xxx --env COMMAND=xxx -AT=xxx,xxx arrowhalo/dingtalk-chatbot:1.0.0 
+docker run -v /root/dingtalk:/root/log --rm -d --env WEBHOOK=https://oapi.dingtalk.com/robot/send?access_token=xxx --env APPNAME=xxx --env COMMAND=xxx --env AT=xxx,xxx arrowhalo/dingtalk-chatbot:1.0.0 
 
 
